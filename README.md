@@ -1,4 +1,4 @@
-# Telca: calculadora de Tela
+# Telca: calculadora de tela
 
 **Telca** es una solución móvil diseñada para entusiastas de la costura. La aplicación facilita el 
 cálculo preciso de la cantidad de tela necesaria para diversos proyectos de confección, optimizando
