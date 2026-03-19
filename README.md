@@ -5,9 +5,9 @@ cálculo preciso de la cantidad de tela necesaria para diversos proyectos de con
 el uso de materiales y reduciendo el desperdicio.
 
 <div style="text-align: center;">
-  <img src="art/captura_1.png" width="20%" alt="Primera captura de pantalla">&nbsp;&nbsp;
-  <img src="art/captura_2.png" width="20%" alt="Segunda captura de pantalla">&nbsp;&nbsp;
-  <img src="art/captura_3.png" width="20%" alt="Tercera captura de pantalla">
+  <img src="art/captura_1.png" width="32%" alt="Primera captura de pantalla">&nbsp;&nbsp;
+  <img src="art/captura_2.png" width="32%" alt="Segunda captura de pantalla">&nbsp;&nbsp;
+  <img src="art/captura_3.png" width="32%" alt="Tercera captura de pantalla">
 </div>
 
 ## Propósito de la App
