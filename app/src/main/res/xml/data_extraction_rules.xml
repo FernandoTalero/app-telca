@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Configuración para copias de seguridad en Google Drive (Nube) -->
+    <cloud-backup>
+
+        <!-- Incluimos la base de datos de Room y preferencias del usuario -->
+        <include domain="database" path="."/>
+        <include domain="sharedpref" path="."/>
+
+        <!-- Excluimos cachés y archivos temporales para ahorrar espacio -->
+        <exclude domain="external" path="."
+            tools:ignore="FullBackupContent" />
+        <exclude domain="root" path="cache"
+            tools:ignore="FullBackupContent" />
+
+    </cloud-backup>
+
+    <!-- Configuración para transferencia directa entre dispositivos (Cable o Wi-Fi) -->
+    <device-transfer>
+
+        <!-- Normalmente se incluyen todos los datos para que el usuario no pierda nada al cambiar
+        de móvil -->
+        <include domain="database" path="."/>
+        <include domain="sharedpref" path="."/>
+        <include domain="file" path="."/>
+
+    </device-transfer>
+
+</data-extraction-rules>

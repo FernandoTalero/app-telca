@@ -1,0 +1,24 @@
+# Gradle y compilación
+.gradle/
+build/
+/*/build
+
+# Archivos de configuración local
+local.properties
+secrets.properties
+
+# IntelliJ/Android Studio
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Archivos temporales y capturas de Android Studio
+captures/
+.externalNativeBuild/
+.cxx/
+.kotlin/
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db

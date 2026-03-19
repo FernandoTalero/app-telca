@@ -1,0 +1,150 @@
+<resources>
+
+    <!-- App -->
+    <string name="app_name">Telca</string>
+
+    <!-- Buttons -->
+    <string name="btn_accept">Aceptar</string>
+    <string name="btn_cancel">Cancelar</string>
+    <string name="btn_save">Guardar</string>
+    <string name="btn_calculate">Calcular cantidad de tela</string>
+    <string name="btn_ads_setup">Configurar anuncios</string>
+
+    <!-- Top app bars -->
+    <string name="tab_item_clean_description">Limpia los datos introducidos</string>
+    <string name="tab_item_save_description">Guarda el trabajo actual</string>
+    <string name="tab_item_more_description">Mostrar más opciones</string>
+    <string name="tab_item_notes">Notas</string>
+    <string name="tab_item_saved_works">Trabajos guardados</string>
+    <string name="tab_item_about">Acerca de</string>
+    <string name="tab_item_add_note">Añadir nota</string>
+    <string name="tab_item_close_description">Cierra la barra contextual</string>
+    <string name="tab_item_delete">Eliminar</string>
+    <string name="tab_selected_count">seleccionado/s</string>
+    <string name="tab_back_button_description">Regresa a la pantalla anterior</string>
+
+    <!-- Work -->
+    <string name="clean_work_confirmation_title">¿Deseas limpiar los datos del trabajo actual?</string>
+    <string name="clean_work_confirmation_text">Si has realizado cambios en él y no lo has guardado,
+        éstos se perderán.</string>
+    <string name="no_saved_work">Trabajo sin guardar</string>
+    <string name="garment_type_section">1. TIPO DE PRENDA</string>
+    <string name="garment_model_section">2. MODELO</string>
+    <string name="garment_measurements_section">3. MEDIDAS</string>
+    <string name="garment_type_section_text">Selecciona el tipo de prenda para el que quieras
+        calcular la cantidad de tela:</string>
+    <string name="garment_model_section_text">Selecciona el modelo que más se ajuste a aquel para
+        el que quieres realizar el cálculo:</string>
+    <string name="garment_measurements_section_text">Las medidas que debes utilizar son las
+        mostradas a continuación:</string>
+    <string name="garment_text">Prenda</string>
+    <string name="change_garment_type_confirmation_title">¿Deseas cambiar el tipo de prenda?</string>
+    <string name="change_garment_type_confirmation_text">Si has realizado cambios en el trabajo
+        actual y no lo has guardado, éstos se perderán.</string>
+    <string name="model_text">Modelo</string>
+    <string name="no_measurements_text">Selecciona un modelo para ver las medidas necesarias</string>
+    <string name="no_valid_number_error">Introduce un valor mayor que cero</string>
+    <string name="no_valid_measurement_value">Valor de medida no válido</string>
+    <string name="text_field_error_description">Error en los datos introducidos</string>
+    <string name="new_work_bottom_sheet_title">Nuevo trabajo</string>
+    <string name="update_work_bottom_sheet_title">Actualizar trabajo</string>
+    <string name="save_work_text_field_label">Nombre del trabajo</string>
+    <string name="no_valid_work_name">Nombre del trabajo no válido</string>
+    <string name="work_saved_message">Trabajo guardado correctamente</string>
+    <string name="work_updated_message">Trabajo actualizado correctamente</string>
+
+    <!-- Notes -->
+    <string name="notes_title">Notas</string>
+    <string name="note_title">Nota</string>
+    <string name="no_notes_text">No hay notas para este trabajo</string>
+    <string name="new_note_bottom_sheet_title">Nueva nota</string>
+    <string name="update_note_bottom_sheet_title">Actualizar nota</string>
+    <string name="save_note_text_field_label">Texto de la nota</string>
+    <string name="no_valid_note_text_error">Introduce un texto para la nota</string>
+    <string name="saved_note_message">Nota guardada correctamente</string>
+    <string name="updated_note_message">Nota actualizada correctamente</string>
+    <string name="delete_notes_confirm_title">¿Deseas eliminar las notas seleccionadas?</string>
+    <string name="delete_notes_confirm_text">Esta acción es permanente y no se puede deshacer.</string>
+    <string name="deleted_notes_message">nota/s eliminada/s</string>
+
+    <!-- Saved works -->
+    <string name="saved_works_title">Trabajos guardados</string>
+    <string name="no_saved_works_text">No hay trabajos guardados</string>
+    <string name="delete_works_confirm_title">¿Deseas eliminar los trabajos seleccionados?</string>
+    <string name="delete_works_confirm_text">Esta acción es permanente y no se puede deshacer.</string>
+    <string name="deleted_works_message">trabajo/s eliminado/s</string>
+
+    <!-- About -->
+    <string name="about_title">Acerca de</string>
+    <string name="developer_name" translatable="false">Fernando Talero</string>
+    <string name="developer_email" translatable="false">fernando.talero.dev@gmail.com</string>
+    <string name="about_icon_description">Icono de la app</string>
+    <string name="ads_privacy_message">Personaliza tu experiencia publicitaria aquí:</string>
+    <string name="privacy_policy_text">Política de Uso y Privacidad</string>
+    <string name="privacy_policy_link">https://sites.google.com/view/app-telca-uso-privacidad/</string>
+
+    <!-- Garments types -->
+    <string name="gt_camisa">Camisa</string>
+    <string name="gt_falda">Falda</string>
+    <string name="gt_pantalon">Pantalón</string>
+    <string name="gt_vestido">Vestido</string>
+    <string name="gt_chaleco">Chaleco</string>
+    <string name="gt_chaqueta">Chaqueta</string>
+    <string name="gt_abrigo">Abrigo</string>
+
+    <!-- Garments subtypes -->
+    <string name="gst_camisa_basica">Básica</string>
+    <string name="gst_falda_recta">Recta</string>
+    <string name="gst_falda_de_capa_entera">De capa entera</string>
+    <string name="gst_falda_de_media_capa">De media capa</string>
+    <string name="gst_falda_plisada">Plisada</string>
+    <string name="gst_pantalon_basico">Básico</string>
+    <string name="gst_vestido_recto">Recto</string>
+    <string name="gst_vestido_recto_sin_mangas">Recto sin mangas</string>
+    <string name="gst_vestido_de_capa_entera">De capa entera</string>
+    <string name="gst_vestido_de_capa_entera_sin_mangas">De capa entera sin mangas</string>
+    <string name="gst_vestido_de_media_capa">De media capa</string>
+    <string name="gst_vestido_de_media_capa_sin_mangas">De media capa sin mangas</string>
+    <string name="gst_vestido_plisado">Plisado</string>
+    <string name="gst_vestido_plisado_sin_mangas">Plisado sin mangas</string>
+    <string name="gst_chaleco_basico">Básico</string>
+    <string name="gst_chaqueta_basica">Básica</string>
+    <string name="gst_abrigo_recto">Recto</string>
+    <string name="gst_abrigo_cruzado">Cruzado</string>
+
+    <!-- MeasurementsTextField types  -->
+    <string name="mt_ancho_tela">Ancho de tela (cm)</string>
+    <string name="mt_contorno_pecho">Contorno de pecho (cm)</string>
+    <string name="mt_contorno_cintura">Contorno de cintura (cm)</string>
+    <string name="mt_contorno_cadera">Contorno de cadera (cm)</string>
+    <string name="mt_contorno_manga">Contorno de manga</string>
+    <string name="mt_largo_talle">Largo de talle (cm)</string>
+    <string name="mt_largo_manga">Largo de manga (cm)</string>
+    <string name="mt_largo_camisa">Largo de camisa (cm)</string>
+    <string name="mt_largo_falda">Largo de falda (cm)</string>
+    <string name="mt_largo_pantalon">Largo de pantalón (cm)</string>
+    <string name="mt_largo_chaqueta">Largo de chaqueta (cm)</string>
+    <string name="mt_largo_abrigo">Largo de abrigo (cm)</string>
+
+    <!-- Calculation result -->
+    <string name="calculation_result_title">Resultado del cálculo</string>
+    <string name="abrigo_cruzado_result"><![CDATA[Para elaborar el abrigo, es necesaria una pieza de tela de <b>%1$.2f cm</b> de ancho por <b>%2$.2f cm</b> de largo.]]></string>
+    <string name="abrigo_recto_result"><![CDATA[Para elaborar el abrigo, es necesaria una pieza de tela de <b>%1$.2f cm</b> de ancho por <b>%2$.2f cm</b> de largo.]]></string>
+    <string name="camisa_basica_result"><![CDATA[Para elaborar la camisa, es necesaria una pieza de tela de <b>%1$.2f cm</b> de ancho por <b>%2$.2f cm</b> de largo.]]></string>
+    <string name="chaleco_basico_result"><![CDATA[Para elaborar el chaleco, es necesaria una pieza de tela de <b>%1$.2f cm</b> de ancho por <b>%2$.2f cm</b> de largo.]]></string>
+    <string name="chaqueta_basica_result"><![CDATA[Para elaborar la chaqueta, es necesaria una pieza de tela de <b>%1$.2f cm</b> de ancho por <b>%2$.2f cm</b> de largo.]]></string>
+    <string name="falda_capa_entera_result"><![CDATA[Para elaborar la falda, es necesaria una pieza de tela de <b>%1$.2f cm</b> de ancho por <b>%2$.2f cm</b> de largo.]]></string>
+    <string name="falda_media_capa_result"><![CDATA[Para elaborar la falda, es necesaria una pieza de tela de <b>%1$.2f cm</b> de ancho por <b>%2$.2f cm</b> de largo.]]></string>
+    <string name="falda_plisada_result"><![CDATA[Para elaborar la falda, es necesaria una pieza de tela de <b>%1$.2f cm</b> de ancho por <b>%2$.2f cm</b> de largo.]]></string>
+    <string name="falda_recta_result"><![CDATA[Para elaborar la falda, es necesaria una pieza de tela de <b>%1$.2f cm</b> de ancho por <b>%2$.2f cm</b> de largo.]]></string>
+    <string name="pantalon_basico_result"><![CDATA[Para elaborar el pantalón, es necesaria una pieza de tela de <b>%1$.2f cm</b> de ancho por <b>%2$.2f cm</b> de largo.]]></string>
+    <string name="vestido_capa_entera_result"><![CDATA[Para elaborar el vestido, es necesaria una pieza de tela de <b>%1$.2f cm</b> de ancho por <b>%2$.2f cm</b> de largo.]]></string>
+    <string name="vestido_capa_entera_sin_mangas_result"><![CDATA[Para elaborar el vestido, es necesaria una pieza de tela de <b>%1$.2f cm</b> de ancho por <b>%2$.2f cm</b> de largo.]]></string>
+    <string name="vestido_media_capa_result"><![CDATA[Para elaborar el vestido, es necesaria una pieza de tela de <b>%1$.2f cm</b> de ancho por <b>%2$.2f cm</b> de largo.]]></string>
+    <string name="vestido_media_capa_sin_mangas_result"><![CDATA[Para elaborar el vestido, es necesaria una pieza de tela de <b>%1$.2f cm</b> de ancho por <b>%2$.2f cm</b> de largo.]]></string>
+    <string name="vestido_plisado_result"><![CDATA[Para elaborar el vestido, es necesaria una pieza de tela de <b>%1$.2f cm</b> de ancho por <b>%2$.2f cm</b> de largo.]]></string>
+    <string name="vestido_plisado_sin_mangas_result"><![CDATA[Para elaborar el vestido, es necesaria una pieza de tela de <b>%1$.2f cm</b> de ancho por <b>%2$.2f cm</b> de largo.]]></string>
+    <string name="vestido_recto_result"><![CDATA[Para elaborar el vestido, es necesaria una pieza de tela de <b>%1$.2f cm</b> de ancho por <b>%2$.2f cm</b> de largo.]]></string>
+    <string name="vestido_recto_sin_mangas_result"><![CDATA[Para elaborar el vestido, es necesaria una pieza de tela de <b>%1$.2f cm</b> de ancho por <b>%2$.2f cm</b> de largo.]]></string>
+
+</resources>
