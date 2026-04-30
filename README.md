@@ -12,9 +12,10 @@ el uso de materiales y reduciendo el desperdicio.
 
 ## Propósito de la App
 
-El objetivo principal de Telca es digitalizar y simplificar el proceso de medición y cálculo en la
-modistería. Permite a los usuarios gestionar trabajos, registrar medidas específicas y obtener cálculos
-exactos basados en tipos de prendas, asegurando resultados profesionales en cada costura.
+El objetivo principal de Telca es digitalizar y simplificar el proceso de medición y cálculo de tela
+en la modistería. Permite a los usuarios gestionar trabajos, registrar medidas específicas y obtener
+cálculos exactos basados en tipos de prendas, asegurando un uso eficiente de la tela en cada proyecto
+de costura.
 
 ## Stack tecnológico
 
