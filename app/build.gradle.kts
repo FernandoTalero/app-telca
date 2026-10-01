@@ -19,12 +19,12 @@ secrets {
 
 android {
     namespace = "com.apptelca"
-    compileSdk = 36
+    compileSdk = 37
 
     defaultConfig {
         applicationId = "com.apptelca"
         minSdk = 29
-        targetSdk = 36
+        targetSdk = 37
         versionCode = 7
         versionName = "0.1-beta"
 
@@ -34,6 +34,7 @@ android {
     buildTypes {
         release {
             isMinifyEnabled = true
+            isShrinkResources = true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
@@ -99,7 +100,6 @@ dependencies {
 
     debugImplementation(libs.junit.ui.test.manifest)
 
-    androidTestImplementation(platform(libs.androidx.compose.bom))
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(libs.androidx.junit)
