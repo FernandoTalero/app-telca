@@ -1,4 +1,4 @@
-package com.apptelca.core
+package com.apptelca.core.util
 
 import android.app.Activity
 import androidx.compose.material3.windowsizeclass.ExperimentalMaterial3WindowSizeClassApi
@@ -6,19 +6,15 @@ import androidx.compose.material3.windowsizeclass.WindowWidthSizeClass
 import androidx.compose.material3.windowsizeclass.calculateWindowSizeClass
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.LocalConfiguration
-import java.time.Instant
-import java.time.ZoneId
-import java.time.format.DateTimeFormatter
 
 /**
- * Contiene funciones para utilidades varias.
+ * Contiene funciones para cálculos de la pantalla.
  *
  * @author Fernando Talero
- * @version 1.0
+ * @version 1.1
  * @since 1.0
  */
-object Util {
-
+object WindowHelper {
     /**
      * Obtiene el WindowWidthSizeClass de la ventana actual.
      *

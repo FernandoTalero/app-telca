@@ -2,7 +2,6 @@ package com.apptelca.validator
 
 import com.apptelca.R
 import com.apptelca.core.ResourceProvider
-import com.apptelca.core.Util
 import com.apptelca.core.util.stringToDouble
 
 /**

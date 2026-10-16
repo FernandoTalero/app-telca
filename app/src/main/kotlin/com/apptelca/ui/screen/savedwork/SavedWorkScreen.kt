@@ -46,7 +46,7 @@ import com.apptelca.R
 import com.apptelca.ui.component.TAlertDialog
 import com.apptelca.ui.event.UiEvent
 import com.apptelca.ui.theme.AppTheme
-import com.apptelca.core.Util
+import com.apptelca.core.util.WindowHelper
 import kotlinx.coroutines.launch
 
 /**
@@ -68,7 +68,7 @@ fun SavedWorkScreen(
     val coroutineScope = rememberCoroutineScope()
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
 
-    AppTheme(windowWidthSizeClass = Util.getWindowWidthSizeClass(LocalActivity.current)) {
+    AppTheme(windowWidthSizeClass = WindowHelper.getWindowWidthSizeClass(LocalActivity.current)) {
         Scaffold(
             modifier = Modifier.nestedScroll(scrollBehavior.nestedScrollConnection),
             snackbarHost = { SnackbarHost(snackbarHostState) },

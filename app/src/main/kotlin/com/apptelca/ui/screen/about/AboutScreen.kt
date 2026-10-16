@@ -50,7 +50,7 @@ import com.apptelca.BuildConfig
 import com.apptelca.R
 import com.apptelca.ui.ads.AdsViewModel
 import com.apptelca.ui.theme.AppTheme
-import com.apptelca.core.Util
+import com.apptelca.core.util.WindowHelper
 
 /**
  * Crea la pantalla "Acerca de".
@@ -67,7 +67,7 @@ fun AboutScreen(
     val scrollBehavior = TopAppBarDefaults.pinnedScrollBehavior(rememberTopAppBarState())
     val uiState by adsViewModel.uiState.collectAsStateWithLifecycle()
 
-    AppTheme(windowWidthSizeClass = Util.getWindowWidthSizeClass(LocalActivity.current)) {
+    AppTheme(windowWidthSizeClass = WindowHelper.getWindowWidthSizeClass(LocalActivity.current)) {
         Scaffold(
             modifier = Modifier.nestedScroll(scrollBehavior.nestedScrollConnection),
             topBar = {
