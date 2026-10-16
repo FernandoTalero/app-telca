@@ -322,8 +322,6 @@ class WorkViewModel @Inject constructor(
 
     /**
      * Otiene los datos del trabajo con el id proporcionado.
-     *
-     * @param workId El id del trabajo.
      */
     private fun fetchWork() {
         // Sólo intentamos obtener los datos del trabajo si el id es mayor que cero
