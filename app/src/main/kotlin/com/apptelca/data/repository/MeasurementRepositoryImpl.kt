@@ -2,7 +2,7 @@ package com.apptelca.data.repository
 
 import com.apptelca.data.local.dao.MeasurementDao
 import com.apptelca.data.mapper.toEntityList
-import com.apptelca.di.IoDispatcher
+import com.apptelca.core.di.IoDispatcher
 import com.apptelca.domain.model.Measurement
 import com.apptelca.domain.repository.MeasurementRepository
 import kotlinx.coroutines.CoroutineDispatcher

@@ -9,8 +9,8 @@ import com.apptelca.data.mapper.toDomain
 import com.apptelca.data.mapper.toDomainList
 import com.apptelca.data.mapper.toEntity
 import com.apptelca.data.mapper.toEntityList
-import com.apptelca.di.DefaultDispatcher
-import com.apptelca.di.IoDispatcher
+import com.apptelca.core.di.DefaultDispatcher
+import com.apptelca.core.di.IoDispatcher
 import com.apptelca.domain.model.Work
 import com.apptelca.domain.model.WorkWithMeasurements
 import com.apptelca.domain.model.garment.subgarment.MeasurementValue

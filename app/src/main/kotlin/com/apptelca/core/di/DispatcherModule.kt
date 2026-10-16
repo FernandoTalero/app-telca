@@ -1,4 +1,4 @@
-package com.apptelca.di
+package com.apptelca.core.di
 
 import dagger.Module
 import dagger.Provides

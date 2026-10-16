@@ -1,4 +1,4 @@
-package com.apptelca.di
+package com.apptelca.core.di
 
 import com.apptelca.domain.repository.NoteRepository
 import com.apptelca.data.repository.NoteRepositoryImpl

@@ -1,4 +1,4 @@
-package com.apptelca.di
+package com.apptelca.core.di
 
 import android.content.Context
 import com.apptelca.core.ResourceProvider
