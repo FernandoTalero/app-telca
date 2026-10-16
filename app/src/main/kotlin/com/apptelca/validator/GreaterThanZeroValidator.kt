@@ -3,6 +3,7 @@ package com.apptelca.validator
 import com.apptelca.R
 import com.apptelca.core.ResourceProvider
 import com.apptelca.core.Util
+import com.apptelca.core.util.stringToDouble
 
 /**
  * Valida números Double mayores que cero y obtenidos a
@@ -21,7 +22,7 @@ class GreaterThanZeroValidator(private val resourceProvider: ResourceProvider) :
      * @return null si no hay error o una cadena de texto del mismo en caso contrario.
      */
     override fun validate(text: String): String? {
-        val number = Util.stringToDouble(text)
+        val number = text.stringToDouble()
         // Si el valor numérico es menor o igual que cero, retornamos el mensaje de error
         if(number <= 0.0) {
             return resourceProvider.getString(R.string.no_valid_number_error)

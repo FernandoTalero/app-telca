@@ -6,7 +6,7 @@ import androidx.lifecycle.viewModelScope
 import androidx.navigation.toRoute
 import com.apptelca.R
 import com.apptelca.core.ResourceProvider
-import com.apptelca.core.Util
+import com.apptelca.core.util.stringToDouble
 import com.apptelca.di.IoDispatcher
 import com.apptelca.domain.model.Work
 import com.apptelca.domain.model.garment.GarmentType
@@ -421,7 +421,7 @@ class WorkViewModel @Inject constructor(
 
                 // ... y añadimos el valor a la lista
                 measurementsValues.add(
-                    MeasurementValue(measurementType, Util.stringToDouble(value))
+                    MeasurementValue(measurementType, value.stringToDouble())
                 )
             }
 

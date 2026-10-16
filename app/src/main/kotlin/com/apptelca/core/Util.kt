@@ -19,17 +19,6 @@ import java.time.format.DateTimeFormatter
  */
 object Util {
     /**
-     * Convierte una cadena de texto en un Double.
-     *
-     * @param text La cadena de texto a convertir.
-     * @return El valor Double resultado de la conversión o 0.0 en caso de
-     * que ésta no sea posible.
-     */
-    fun stringToDouble(text: String): Double {
-        return text.trim().replace(",", ".").toDoubleOrNull() ?: 0.0
-    }
-
-    /**
      * Da formato de fecha y hora a un objeto de tipo Instant.
      *
      * @param dateTime El objeto Instant al que se quiere dar formato.
