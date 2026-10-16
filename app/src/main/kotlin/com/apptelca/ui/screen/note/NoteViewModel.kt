@@ -6,7 +6,7 @@ import androidx.lifecycle.viewModelScope
 import androidx.navigation.toRoute
 import com.apptelca.R
 import com.apptelca.core.ResourceProvider
-import com.apptelca.core.Util
+import com.apptelca.core.util.formatDateTime
 import com.apptelca.di.IoDispatcher
 import com.apptelca.domain.model.Note
 import com.apptelca.domain.usecase.NoteUseCase
@@ -70,7 +70,7 @@ class NoteViewModel @Inject constructor(
                 val notesItemsList = notes.map {
                     NoteItemUiState(
                         id = it.id,
-                        noteDateTime = Util.formatDateTime(it.dateTime),
+                        noteDateTime = it.dateTime.formatDateTime(),
                         noteText = it.text,
                         isSelected = selectedIds.contains(it.id)
                     )

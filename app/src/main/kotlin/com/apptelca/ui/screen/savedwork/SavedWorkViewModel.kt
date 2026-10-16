@@ -3,7 +3,7 @@ package com.apptelca.ui.screen.savedwork
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.apptelca.core.ResourceProvider
-import com.apptelca.core.Util
+import com.apptelca.core.util.formatDateTime
 import com.apptelca.domain.model.Work
 import com.apptelca.domain.usecase.SavedWorkUseCase
 import com.apptelca.ui.event.UiEvent
@@ -60,7 +60,7 @@ class SavedWorkViewModel @Inject constructor(
                         workName = it.name,
                         workType = resourceProvider.getGarmentTypeString(it.type),
                         workSubType = resourceProvider.getGarmentSubTypeString(it.subtype),
-                        workDateTime = Util.formatDateTime(it.dateTime),
+                        workDateTime = it.dateTime.formatDateTime(),
                         isSelected = selectedIds.contains(it.id)
                     )
                 }

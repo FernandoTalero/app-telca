@@ -18,18 +18,6 @@ import java.time.format.DateTimeFormatter
  * @since 1.0
  */
 object Util {
-    /**
-     * Da formato de fecha y hora a un objeto de tipo Instant.
-     *
-     * @param dateTime El objeto Instant al que se quiere dar formato.
-     * @return Una cadena de texto con la fecha formateada.
-     */
-    fun formatDateTime(dateTime: Instant): String {
-        return DateTimeFormatter
-            .ofPattern("dd/MM/yyyy HH:mm")
-            .withZone(ZoneId.systemDefault())
-            .format(dateTime)
-    }
 
     /**
      * Obtiene el WindowWidthSizeClass de la ventana actual.
