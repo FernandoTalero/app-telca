@@ -1,12 +1,12 @@
 package com.apptelca
 
 import com.apptelca.core.ResourceProvider
-import com.apptelca.validator.GreaterThanZeroValidator
-import com.apptelca.validator.MeasurementValidator
-import com.apptelca.validator.MeasurementValueValidator
-import com.apptelca.validator.NoteTextValidator
-import com.apptelca.validator.NoteTextValueValidator
-import com.apptelca.validator.WorkNameValidator
+import com.apptelca.core.validator.GreaterThanZeroValidator
+import com.apptelca.core.validator.MeasurementValidator
+import com.apptelca.core.validator.MeasurementValueValidator
+import com.apptelca.core.validator.NoteTextValidator
+import com.apptelca.core.validator.NoteTextValueValidator
+import com.apptelca.core.validator.WorkNameValidator
 import io.mockk.every
 import io.mockk.mockk
 import io.mockk.unmockkAll

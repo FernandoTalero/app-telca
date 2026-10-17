@@ -22,11 +22,11 @@ import com.apptelca.domain.usecase.work.ValidateMeasurementUseCase
 import com.apptelca.domain.usecase.work.ValidateMeasurementValueUseCase
 import com.apptelca.domain.usecase.work.ValidateWorkNameUseCase
 import com.apptelca.domain.usecase.work.ValidateWorkNameValueUseCase
-import com.apptelca.validator.MeasurementValidator
-import com.apptelca.validator.NoteTextValidator
-import com.apptelca.validator.NoteTextValueValidator
-import com.apptelca.validator.WorkNameValidator
-import com.apptelca.validator.WorkNameValueValidator
+import com.apptelca.core.validator.MeasurementValidator
+import com.apptelca.core.validator.NoteTextValidator
+import com.apptelca.core.validator.NoteTextValueValidator
+import com.apptelca.core.validator.WorkNameValidator
+import com.apptelca.core.validator.WorkNameValueValidator
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

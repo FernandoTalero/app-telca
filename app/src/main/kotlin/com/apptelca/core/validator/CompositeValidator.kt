@@ -1,4 +1,4 @@
-package com.apptelca.validator
+package com.apptelca.core.validator
 
 /**
  * Permite aplicar varios validadores a una misma cadena de texto.

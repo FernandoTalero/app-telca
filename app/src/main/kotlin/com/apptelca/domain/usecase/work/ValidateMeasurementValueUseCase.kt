@@ -1,6 +1,6 @@
 package com.apptelca.domain.usecase.work
 
-import com.apptelca.validator.MeasurementValueValidator
+import com.apptelca.core.validator.MeasurementValueValidator
 import javax.inject.Inject
 
 /**

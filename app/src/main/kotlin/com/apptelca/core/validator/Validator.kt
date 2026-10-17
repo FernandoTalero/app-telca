@@ -1,4 +1,4 @@
-package com.apptelca.validator
+package com.apptelca.core.validator
 
 /**
  * Define la base para clases validadoras.

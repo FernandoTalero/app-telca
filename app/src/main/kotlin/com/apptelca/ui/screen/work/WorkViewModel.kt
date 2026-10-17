@@ -16,9 +16,9 @@ import com.apptelca.domain.model.garment.subgarment.MeasurementValue
 import com.apptelca.domain.usecase.WorkUseCase
 import com.apptelca.ui.event.UiEvent
 import com.apptelca.ui.navigation.NavRoutes
-import com.apptelca.validator.CompositeValidator
-import com.apptelca.validator.GreaterThanZeroValidator
-import com.apptelca.validator.MeasurementValidator
+import com.apptelca.core.validator.CompositeValidator
+import com.apptelca.core.validator.GreaterThanZeroValidator
+import com.apptelca.core.validator.MeasurementValidator
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.flow.MutableSharedFlow

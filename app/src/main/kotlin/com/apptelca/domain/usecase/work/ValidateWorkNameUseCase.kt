@@ -1,6 +1,6 @@
 package com.apptelca.domain.usecase.work
 
-import com.apptelca.validator.WorkNameValidator
+import com.apptelca.core.validator.WorkNameValidator
 
 /**
  * Valida el nombre de un trabajo.

@@ -1,4 +1,4 @@
-package com.apptelca.validator
+package com.apptelca.core.validator
 
 import com.apptelca.R
 import com.apptelca.core.ResourceProvider

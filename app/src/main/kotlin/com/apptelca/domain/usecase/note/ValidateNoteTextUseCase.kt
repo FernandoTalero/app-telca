@@ -1,6 +1,6 @@
 package com.apptelca.domain.usecase.note
 
-import com.apptelca.validator.NoteTextValidator
+import com.apptelca.core.validator.NoteTextValidator
 
 /**
  * Valida el texto de una nota.

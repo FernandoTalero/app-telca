@@ -1,6 +1,6 @@
 package com.apptelca.domain.usecase.work
 
-import com.apptelca.validator.MeasurementValidator
+import com.apptelca.core.validator.MeasurementValidator
 
 /**
  * Valida una medida.

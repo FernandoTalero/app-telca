@@ -1,4 +1,4 @@
-package com.apptelca.validator
+package com.apptelca.core.validator
 
 /**
  * Valida el nombre de un trabajo.

@@ -1,4 +1,4 @@
-package com.apptelca.validator
+package com.apptelca.core.validator
 
 /**
  * Valida el valor del campo de texto para el nombre de un trabajo antes de ser
