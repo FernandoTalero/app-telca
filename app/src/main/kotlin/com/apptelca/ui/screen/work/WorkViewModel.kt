@@ -6,7 +6,7 @@ import androidx.lifecycle.viewModelScope
 import androidx.navigation.toRoute
 import com.apptelca.R
 import com.apptelca.core.ResourceProvider
-import com.apptelca.core.util.stringToDouble
+import com.apptelca.core.extension.stringToDouble
 import com.apptelca.core.di.IoDispatcher
 import com.apptelca.domain.model.Work
 import com.apptelca.domain.model.garment.GarmentType

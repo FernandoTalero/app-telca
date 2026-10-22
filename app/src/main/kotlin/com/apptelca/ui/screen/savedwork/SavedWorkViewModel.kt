@@ -3,7 +3,7 @@ package com.apptelca.ui.screen.savedwork
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.apptelca.core.ResourceProvider
-import com.apptelca.core.util.formatDateTime
+import com.apptelca.core.extension.formatDateTime
 import com.apptelca.domain.model.Work
 import com.apptelca.domain.usecase.SavedWorkUseCase
 import com.apptelca.ui.event.UiEvent

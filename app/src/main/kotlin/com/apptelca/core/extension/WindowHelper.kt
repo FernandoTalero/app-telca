@@ -1,4 +1,4 @@
-package com.apptelca.core.util
+package com.apptelca.core.extension
 
 import android.app.Activity
 import androidx.compose.material3.windowsizeclass.ExperimentalMaterial3WindowSizeClassApi

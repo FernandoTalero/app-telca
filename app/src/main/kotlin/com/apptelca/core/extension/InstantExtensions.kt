@@ -1,4 +1,4 @@
-package com.apptelca.core.util
+package com.apptelca.core.extension
 
 import java.time.Instant
 import java.time.ZoneId

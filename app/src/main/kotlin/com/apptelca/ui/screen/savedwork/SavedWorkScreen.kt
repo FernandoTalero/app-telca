@@ -46,7 +46,7 @@ import com.apptelca.R
 import com.apptelca.ui.component.TAlertDialog
 import com.apptelca.ui.event.UiEvent
 import com.apptelca.ui.theme.AppTheme
-import com.apptelca.core.util.WindowHelper
+import com.apptelca.core.extension.WindowHelper
 import kotlinx.coroutines.launch
 
 /**

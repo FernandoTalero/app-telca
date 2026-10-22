@@ -50,7 +50,7 @@ import com.apptelca.BuildConfig
 import com.apptelca.R
 import com.apptelca.ui.ads.AdsViewModel
 import com.apptelca.ui.theme.AppTheme
-import com.apptelca.core.util.WindowHelper
+import com.apptelca.core.extension.WindowHelper
 
 /**
  * Crea la pantalla "Acerca de".

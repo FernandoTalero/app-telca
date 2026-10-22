@@ -2,7 +2,7 @@ package com.apptelca.core.validator
 
 import com.apptelca.R
 import com.apptelca.core.ResourceProvider
-import com.apptelca.core.util.stringToDouble
+import com.apptelca.core.extension.stringToDouble
 
 /**
  * Valida números Double mayores que cero y obtenidos a

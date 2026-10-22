@@ -1,4 +1,4 @@
-package com.apptelca.core.util
+package com.apptelca.core.extension
 
 /**
  * Convierte una cadena de texto en un Double.
