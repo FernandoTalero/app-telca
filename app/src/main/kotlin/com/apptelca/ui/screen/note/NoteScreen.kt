@@ -49,7 +49,7 @@ import com.apptelca.ui.component.TAlertDialog
 import com.apptelca.ui.event.UiEvent
 import com.apptelca.ui.screen.savedwork.SaveNoteBottomSheet
 import com.apptelca.ui.theme.AppTheme
-import com.apptelca.core.extension.WindowHelper
+import com.apptelca.core.util.WindowHelper
 import kotlinx.coroutines.launch
 
 /**
