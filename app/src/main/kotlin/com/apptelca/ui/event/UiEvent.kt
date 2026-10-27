@@ -1,23 +1,23 @@
 package com.apptelca.ui.event
 
 /**
- * Clase para notificar los eventos de la UI.
+ * Interfaz para notificar los eventos de la UI.
  *
  * @author Fernando Talero
- * @version 1.0
+ * @version 1.1
  * @since 1.0
  */
-sealed class UiEvent {
+sealed interface UiEvent {
     // Trabajos
-    object WorkSaved : UiEvent()
-    object WorkUpdated : UiEvent()
-    class WorkDeleted(val deletedWorks: Int) : UiEvent()
+    data object WorkSaved : UiEvent
+    data object WorkUpdated : UiEvent
+    data class WorkDeleted(val deletedWorks: Int) : UiEvent
 
     // Notas
-    object NoteSaved : UiEvent()
-    object NoteUpdated : UiEvent()
-    class NoteDeleted(val deletedNotes: Int) : UiEvent()
+    data object NoteSaved : UiEvent
+    data object NoteUpdated : UiEvent
+    data class NoteDeleted(val deletedNotes: Int) : UiEvent
 
     // Errores
-    class Error(val message: String) : UiEvent()
+    data class Error(val message: String) : UiEvent
 }
