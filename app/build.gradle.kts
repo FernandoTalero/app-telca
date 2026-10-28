@@ -79,7 +79,6 @@ dependencies {
     implementation(libs.androidx.navigation)
     implementation(libs.androidx.room.ktx)
     implementation(libs.androidx.room.runtime)
-    implementation(libs.androidx.security.crypto)
     implementation(libs.androidx.sqlite.framework)
     implementation(libs.google.mobile.ads)
     implementation(libs.google.user.messaging.platform)
