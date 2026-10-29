@@ -7,6 +7,7 @@ import com.google.crypto.tink.RegistryConfiguration
 import com.google.crypto.tink.aead.AeadConfig
 import com.google.crypto.tink.aead.AesGcmKeyManager
 import com.google.crypto.tink.integration.android.AndroidKeysetManager
+import dagger.hilt.android.qualifiers.ApplicationContext
 import java.security.KeyStore
 import javax.inject.Inject
 
@@ -17,7 +18,9 @@ import javax.inject.Inject
  * @version 1.0
  * @since 1.0
  */
-class TinkEncryptionManager @Inject constructor(private val context: Context) : EncryptionManager {
+class TinkEncryptionManager @Inject constructor(
+    @ApplicationContext private val context: Context
+) : EncryptionManager {
     private lateinit var aead: Aead
 
     // Alias de la clave maestra

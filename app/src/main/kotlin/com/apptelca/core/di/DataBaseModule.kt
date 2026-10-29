@@ -2,18 +2,19 @@ package com.apptelca.core.di
 
 import android.content.Context
 import androidx.room.Room
+import com.apptelca.core.sec.EncryptionManager
 import com.apptelca.data.DBInfo
-import com.apptelca.data.local.database.DataBase
 import com.apptelca.data.local.dao.MeasurementDao
 import com.apptelca.data.local.dao.NoteDao
 import com.apptelca.data.local.dao.WorkDao
+import com.apptelca.data.local.database.DataBase
+import com.apptelca.data.local.database.DbPassphraseHelper
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
-import java.lang.annotation.RetentionPolicy
-import javax.inject.Qualifier
+import net.zetetic.database.sqlcipher.SupportOpenHelperFactory
 import javax.inject.Singleton
 
 /**
@@ -30,12 +31,14 @@ object DataBaseModule {
     // DataBase
     @Singleton
     @Provides
-    fun provideDataBase(@ApplicationContext context: Context): DataBase {
-        return Room.databaseBuilder(
-            context.applicationContext,
-            DataBase::class.java,
-            DBInfo.NAME
-        ).build()
+    fun provideDataBase(
+        @ApplicationContext context: Context,
+        dbPassphraseHelper: DbPassphraseHelper
+    ): DataBase {
+        val dbPassphrase = dbPassphraseHelper.getOrCreatePassphrase()
+        return Room.databaseBuilder(context.applicationContext, DataBase::class.java, DBInfo.NAME)
+            .openHelperFactory(SupportOpenHelperFactory(dbPassphrase))
+            .build()
     }
 
     // WorkDao
@@ -57,5 +60,15 @@ object DataBaseModule {
     @Provides
     fun provideNoteDao(dataBase: DataBase): NoteDao {
         return dataBase.noteDao()
+    }
+
+    // SecureDBHelper
+    @Singleton
+    @Provides
+    fun providesDbPassphraseHelper(
+        @ApplicationContext context: Context,
+        encryptionManager: EncryptionManager
+    ): DbPassphraseHelper {
+        return DbPassphraseHelper(encryptionManager, context)
     }
 }
