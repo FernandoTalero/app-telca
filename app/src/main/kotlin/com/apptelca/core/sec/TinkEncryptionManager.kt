@@ -106,8 +106,8 @@ class TinkEncryptionManager @Inject constructor(private val context: Context) : 
      * @param plainText Texto a cifrar.
      * @return El texto cifrado en un formato de array de bytes.
      */
-    override fun encrypt(plainText: String): ByteArray =
-        aead.encrypt(plainText.toByteArray(Charsets.UTF_8), null)
+    override fun encrypt(plainText: ByteArray): ByteArray =
+        aead.encrypt(plainText, null)
 
     /**
      * Descrifra un texto cifrado.
@@ -115,6 +115,6 @@ class TinkEncryptionManager @Inject constructor(private val context: Context) : 
      * @param cipherText El texto cifrado en formato de array de bytes.
      * @return El texto descifrado.
      */
-    override fun decrypt(cipherText: ByteArray): String =
-        String(aead.decrypt(cipherText, null), Charsets.UTF_8)
+    override fun decrypt(cipherText: ByteArray): ByteArray =
+        aead.decrypt(cipherText, null)
 }
