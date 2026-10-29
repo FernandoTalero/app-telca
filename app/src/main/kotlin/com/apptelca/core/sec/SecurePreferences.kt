@@ -28,7 +28,8 @@ class SecurePreferences(private val context: Context) {
 
         // Encriptamos la cadena de texto
         val encryptedString = Base64.encodeToString(
-            encryptionManager.encrypt(plainText), Base64.NO_WRAP
+            encryptionManager.encrypt(plainText.toByteArray()),
+            Base64.NO_WRAP
         )
 
         context.dataStore.edit { preferences ->
