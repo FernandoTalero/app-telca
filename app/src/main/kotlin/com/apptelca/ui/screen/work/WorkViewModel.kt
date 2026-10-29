@@ -5,9 +5,12 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import androidx.navigation.toRoute
 import com.apptelca.R
-import com.apptelca.core.ResourceProvider
-import com.apptelca.core.extension.stringToDouble
+import com.apptelca.core.util.ResourceProvider
 import com.apptelca.core.di.IoDispatcher
+import com.apptelca.core.extension.stringToDouble
+import com.apptelca.core.validator.CompositeValidator
+import com.apptelca.core.validator.GreaterThanZeroValidator
+import com.apptelca.core.validator.MeasurementValidator
 import com.apptelca.domain.model.Work
 import com.apptelca.domain.model.garment.GarmentType
 import com.apptelca.domain.model.garment.subgarment.GarmentSubType
@@ -16,9 +19,6 @@ import com.apptelca.domain.model.garment.subgarment.MeasurementValue
 import com.apptelca.domain.usecase.WorkUseCase
 import com.apptelca.ui.event.UiEvent
 import com.apptelca.ui.navigation.NavRoutes
-import com.apptelca.core.validator.CompositeValidator
-import com.apptelca.core.validator.GreaterThanZeroValidator
-import com.apptelca.core.validator.MeasurementValidator
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.flow.MutableSharedFlow

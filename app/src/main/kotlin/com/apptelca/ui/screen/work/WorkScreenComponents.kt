@@ -52,7 +52,7 @@ import com.apptelca.R
 import com.apptelca.domain.model.garment.GarmentType
 import com.apptelca.domain.model.garment.subgarment.GarmentSubType
 import com.apptelca.domain.model.garment.subgarment.MeasurementType
-import com.apptelca.core.ResourceProvider
+import com.apptelca.core.util.ResourceProvider
 import com.apptelca.ui.component.DropdownMenuItemUiState
 import com.apptelca.ui.component.TDropdownMenu
 import kotlinx.coroutines.delay

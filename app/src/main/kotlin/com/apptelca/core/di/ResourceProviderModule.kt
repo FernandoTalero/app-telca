@@ -1,7 +1,7 @@
 package com.apptelca.core.di
 
 import android.content.Context
-import com.apptelca.core.ResourceProvider
+import com.apptelca.core.util.ResourceProvider
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

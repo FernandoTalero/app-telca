@@ -1,7 +1,7 @@
 package com.apptelca.domain.model.garment.subgarment
 
 import com.apptelca.R
-import com.apptelca.core.ResourceProvider
+import com.apptelca.core.util.ResourceProvider
 import kotlin.math.ceil
 
 /**

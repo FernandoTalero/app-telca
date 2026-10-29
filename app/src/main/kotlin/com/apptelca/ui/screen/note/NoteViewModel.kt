@@ -5,7 +5,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import androidx.navigation.toRoute
 import com.apptelca.R
-import com.apptelca.core.ResourceProvider
+import com.apptelca.core.util.ResourceProvider
 import com.apptelca.core.extension.formatDateTime
 import com.apptelca.core.di.IoDispatcher
 import com.apptelca.domain.model.Note

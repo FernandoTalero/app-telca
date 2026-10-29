@@ -1,7 +1,7 @@
 package com.apptelca.core.validator
 
 import com.apptelca.R
-import com.apptelca.core.ResourceProvider
+import com.apptelca.core.util.ResourceProvider
 import javax.inject.Inject
 
 /**

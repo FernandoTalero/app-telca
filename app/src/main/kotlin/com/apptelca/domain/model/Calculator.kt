@@ -1,7 +1,7 @@
 package com.apptelca.domain.model
 
 import com.apptelca.domain.model.garment.subgarment.MeasurementValue
-import com.apptelca.core.ResourceProvider
+import com.apptelca.core.util.ResourceProvider
 
 /**
  * Define la función para el cálculo de la cantidad de tela necesaria

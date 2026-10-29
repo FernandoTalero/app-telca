@@ -1,6 +1,6 @@
 package com.apptelca
 
-import com.apptelca.core.ResourceProvider
+import com.apptelca.core.util.ResourceProvider
 import com.apptelca.core.validator.GreaterThanZeroValidator
 import com.apptelca.core.validator.MeasurementValidator
 import com.apptelca.core.validator.MeasurementValueValidator

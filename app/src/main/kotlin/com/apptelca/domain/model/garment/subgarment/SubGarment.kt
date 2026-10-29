@@ -1,7 +1,7 @@
 package com.apptelca.domain.model.garment.subgarment
 
 import com.apptelca.domain.model.Calculator
-import com.apptelca.core.ResourceProvider
+import com.apptelca.core.util.ResourceProvider
 
 /**
  * Clase base para todos los subtipos de prendas de ropa.

@@ -1,4 +1,4 @@
-package com.apptelca.core
+package com.apptelca.core.util
 
 import android.content.Context
 import com.apptelca.R
