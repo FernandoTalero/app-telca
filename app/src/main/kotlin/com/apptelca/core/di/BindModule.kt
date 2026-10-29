@@ -1,5 +1,7 @@
 package com.apptelca.core.di
 
+import com.apptelca.core.sec.EncryptionManager
+import com.apptelca.core.sec.TinkEncryptionManager
 import com.apptelca.domain.repository.NoteRepository
 import com.apptelca.data.repository.NoteRepositoryImpl
 import com.apptelca.domain.repository.WorkRepository
@@ -28,4 +30,8 @@ abstract class BindModule {
     @Binds
     @Singleton
     abstract fun bindNoteRepository(noteRepositoryIml: NoteRepositoryImpl): NoteRepository
+
+    @Binds
+    @Singleton
+    abstract fun bindEncryptionManager(tinkEncryptionManager: TinkEncryptionManager): EncryptionManager
 }
