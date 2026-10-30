@@ -62,13 +62,13 @@ class TinkEncryptionManager @Inject constructor(
     /**
      * Crea un Keyset cifrado y almacenado en ShraredPreferences.
      *
-     * @return Un AndroidKeysetManager.
+     * @return Un AndroidKeysetManager con la configuración del Keyset.
      */
     private fun createKeysetManager(): AndroidKeysetManager =
         AndroidKeysetManager.Builder()
             // Establecemos la clave maestra
             .withMasterKeyUri(masterKeyUri)
-            // Establecemos la plantilla de la primitiva de encriptación
+            // Establecemos la plantilla de la primitiva criptográfica
             .withKeyTemplate(AesGcmKeyManager.aes256GcmTemplate())
             // Indicamos dónde se almacena el Keyset
             .withSharedPref(context, keysetName, keysetSharedPref)

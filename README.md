@@ -63,11 +63,15 @@ La base del código aplica rigurosamente los principios SOLID:
 ## Seguridad y configuración
 
 El proyecto implementa el **Secrets Gradle Plugin** para la gestión segura de claves sensibles (API
-Keys, AdMob IDs, etc.):
+Keys, AdMob IDs, etc.), así como cifrado de la base de datos mediante las librerías criptográficas 
+Google Tink y SQLCipher:
 - Las propiedades sensibles se almacenan en un archivo `secrets.properties` (excluido del control de
 versiones).
 - Se utiliza `BuildConfig` para acceder a constantes de configuración de manera segura durante el 
 tiempo de compilación.
+- Las claves de cifrado se gestionan mediante un Keyset protegido por una clave maestra almacenada
+en el Android Keystore.
+- Implementación de AES-256-GCM como primitiva criptográfica.
 
 ## Calidad de código
 
