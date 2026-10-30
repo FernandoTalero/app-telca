@@ -82,5 +82,5 @@ de la base de datos a la UI.
 - **Validators:** Lógica centralizada para la validación de entradas de usuario y medidas.
 
 **Desarrollado por:** [Fernando Talero]  
-**Versión:** 0.1-beta  
-**Status:** Finalizada la primera versión beta.
+**Versión:** 0.2-beta  
+**Status:** Finalizada la segunda versión beta.
