@@ -9,6 +9,7 @@ import com.apptelca.data.local.dao.NoteDao
 import com.apptelca.data.local.dao.WorkDao
 import com.apptelca.data.local.database.DataBase
 import com.apptelca.data.local.database.DbPassphraseHelper
+import com.apptelca.data.local.database.EncryptedDbMigrator
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -36,6 +37,8 @@ object DataBaseModule {
         dbPassphraseHelper: DbPassphraseHelper
     ): DataBase {
         val dbPassphrase = dbPassphraseHelper.getOrCreatePassphrase()
+        EncryptedDbMigrator.migrate(context, DBInfo.NAME, dbPassphrase)
+
         return Room.databaseBuilder(context.applicationContext, DataBase::class.java, DBInfo.NAME)
             .openHelperFactory(SupportOpenHelperFactory(dbPassphrase))
             .build()
@@ -69,6 +72,6 @@ object DataBaseModule {
         @ApplicationContext context: Context,
         encryptionManager: EncryptionManager
     ): DbPassphraseHelper {
-        return DbPassphraseHelper(encryptionManager, context)
+        return DbPassphraseHelper(context, encryptionManager)
     }
 }

@@ -14,8 +14,8 @@ import javax.inject.Inject
  * @version 1.0
  */
 class DbPassphraseHelper @Inject constructor(
-    private val encryptionManager: EncryptionManager,
-    context: Context
+    context: Context,
+    private val encryptionManager: EncryptionManager
 ) {
     private val keyFile = File(context.filesDir, "sec_db_key.enc")
 
@@ -25,14 +25,18 @@ class DbPassphraseHelper @Inject constructor(
      * @return La clave de cifrado de la base de datos en formato de array de bytes.
      */
     fun getOrCreatePassphrase(): ByteArray {
+        // Si existe el archivo con la clave encriptada...
         return if(keyFile.exists()) {
+            // ... lo leemos y la retornamos
             encryptionManager.decrypt(keyFile.readBytes())
         } else {
-            val plainPassphrase = ByteArray(32)
-            SecureRandom().nextBytes(plainPassphrase)
+            // En caso contrario, creamos una clave de 256 bits
+            val passphrase = ByteArray(32)
+            SecureRandom().nextBytes(passphrase)
 
-            keyFile.writeBytes(encryptionManager.encrypt(plainPassphrase))
-            plainPassphrase
+            // Guardamos encriptada la clave y la retornamos
+            keyFile.writeBytes(encryptionManager.encrypt(passphrase))
+            passphrase
         }
     }
 }
