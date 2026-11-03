@@ -2,6 +2,7 @@ package com.apptelca.data.local.database
 
 import android.content.Context
 import android.util.Log
+import com.apptelca.core.extension.secureDelete
 import com.apptelca.core.extension.toSQLCipherHex
 import net.zetetic.database.sqlcipher.SQLiteDatabase
 import java.io.File
@@ -46,10 +47,10 @@ object EncryptedDbMigrator {
             val tempDbFile = context.getDatabasePath("${dbName}_temp")
             /* Eliminamos el archivo en caso de que ya exista por un intento de migración
              anterior fallido */
-            if(tempDbFile.exists()) tempDbFile.delete()
+            tempDbFile.secureDelete()
 
             try {
-                // Nombre de la base de datos encruptada
+                // Nombre de la base de datos encriptada
                 val encryptedDbName = "encrypted_db"
 
                 // Abrimos la base de datos sin cifrar
@@ -78,17 +79,25 @@ object EncryptedDbMigrator {
                 if(dbWalFile.exists()) dbWalFile.delete()
                 if(dbShmFile.exists()) dbShmFile.delete()
 
-                // Renombramos el archivo temporal con la base de datos cifrada
-                tempDbFile.renameTo(dbFile)
+                /* Renombramos el archivo temporal con la base de datos cifrada. En
+                * caso de error, lo eliminamos para no dejar residuos del intento
+                * de migración  */
+                if(!tempDbFile.renameTo(dbFile)) {
+                    Log.e(
+                        "EncryptedDbMigrator::migrate",
+                        "Error al renombrar la base de datos encriptada"
+                    )
+                    tempDbFile.secureDelete()
+                }
             } catch(e: Exception) {
                 Log.e(
                     "EncryptedDbMigrator::migrate",
                     "Error al migrar la base de datos", e
                 )
 
-                /* Eliminamos el archivo temporal para no dejar residuo del
+                /* Eliminamos el archivo temporal para no dejar residuos del
                  intento de migración */
-                if(tempDbFile.exists()) tempDbFile.delete()
+                tempDbFile.secureDelete()
             }
         }
     }
