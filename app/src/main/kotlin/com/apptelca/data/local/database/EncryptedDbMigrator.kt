@@ -16,6 +16,10 @@ import java.io.File
 object EncryptedDbMigrator {
     /**
      * Lleva a cabo el proceso de migración a la base de datos cifrada.
+     *
+     * @param context El Context de la aplicación
+     * @param dbName El nombre de la base de datos sin cifrar
+     * @param passphrase La clave de la nueva base de datos encriptada
      */
     fun migrate(context: Context, dbName: String, passphrase: ByteArray) {
         // Cargamos la librería de SQLCipher
