@@ -28,8 +28,11 @@ La aplicación está construida utilizando las últimas tecnologías y herramien
 - **Asincronía:** [Kotlin Coroutines](https://kotlinlang.org/docs/coroutines-overview.html) & [Flow](https://kotlinlang.org/docs/flow.html)
 - **Navegación:** [Jetpack Navigation Compose](https://developer.android.com/jetpack/compose/navigation)
 - **Serialización:** [Kotlinx Serialization](https://github.com/Kotlin/kotlinx.serialization)
+- **Seguridad y criptografía:** [Google Tink](https://developers.google.com/tink?hl=es-419) y
+    [SQLCipher](https://www.zetetic.net/sqlcipher/)
+- **Testing:** [JUnit 4/5](https://junit.org/), [MockK](https://mockk.io/) y
+[Compose UI Test](https://developer.android.com/develop/ui/compose/testing?hl=es-419)
 - **Monetización:** [Google Mobile Ads SDK](https://developers.google.com/admob/android/quick-start)
-- **Testing:** JUnit 4/5, MockK y Compose UI Test.
 
 ## Arquitectura y patrones
 
@@ -69,9 +72,9 @@ Google Tink y SQLCipher:
 versiones).
 - Se utiliza `BuildConfig` para acceder a constantes de configuración de manera segura durante el 
 tiempo de compilación.
-- Las claves de cifrado se gestionan mediante un Keyset protegido por una clave maestra almacenada
-en el Android Keystore.
-- Implementación de AES-256-GCM como primitiva criptográfica.
+- Las claves de cifrado se gestionan mediante un Keyset de Google Tink protegido por una clave 
+maestra almacenada en el Android Keystore.
+- Se implementa AES-256-GCM como primitiva criptográfica.
 
 ## Calidad de código
 
